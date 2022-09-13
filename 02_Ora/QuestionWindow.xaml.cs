@@ -89,5 +89,13 @@ namespace _02_Ora
                 }
             });
         }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Biztosan be szeretné zárni a lapot", "", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

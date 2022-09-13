@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_02_Ora"
         mc:Ignorable="d"
-        Title="QuestionWindow" Height="340" Width="320" WindowState="Normal">
+        Title="QuestionWindow" Height="340" Width="320" WindowState="Normal" Closed="Window_Closed">
 
     <Canvas x:Name="canvas" Background="Wheat">
         <Label x:Name="question" Background="LightBlue" Canvas.Left="20" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="280" Height="44"/>
