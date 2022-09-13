@@ -90,11 +90,11 @@ namespace _02_Ora
             });
         }
 
-        private void Window_Closed(object sender, EventArgs e)
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if (MessageBox.Show("Biztosan be szeretné zárni a lapot", "", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            if (MessageBox.Show("Biztosan be szeretné zárni a lapot", "", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
             {
-                this.Close();
+                e.Cancel = true;
             }
         }
     }
