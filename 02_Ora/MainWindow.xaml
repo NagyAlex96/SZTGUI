@@ -5,18 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_02_Ora"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="auto"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
+        Title="MainWindow" Height="600" Width="800" WindowState="Normal" Loaded="Window_Loaded"> 
 
-        
-        
-    </Grid>
+    <WrapPanel x:Name="wrapPanelWindows">
+
+    </WrapPanel>
+
 </Window>
